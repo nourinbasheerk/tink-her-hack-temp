@@ -101,29 +101,17 @@ Interface for fetc
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+<img width="575" height="840" alt="systemarchi" src="https://github.com/user-attachments/assets/013506bb-766d-4cfe-a054-b1eea95052da" /> Fireworks Risk Prediction – System Architecture
+This diagram illustrates the technical structure of the system. The user interacts with the Streamlit interface, which sends a request to the OpenWeather API to retrieve weather data. The system then combines weather data and manual inputs to form a feature vector. This feature vector is passed to the trained machine learning model (fire_model.pkl), which produces the final risk classification along with a confidence score.
+
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+<img width="600" height="851" alt="ss5" src="https://github.com/user-attachments/assets/2d73eb5f-5e83-48cd-a4d7-4b239e95d0b9" />
+Fireworks Risk Prediction – Workflow
+This diagram shows the step-by-step process of the application. The user first enters a city name and fetches real-time weather data. Then, environmental parameters (temperature, humidity, wind speed) are collected and displayed. After that, the user provides manual inputs such as crowd size, storage duration, and fireworks quantity. Finally, all inputs are processed by the machine learning model to generate a risk prediction: Safe, Warning, or High Risk.
 
----
 
-
-#### Build Photos
-
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ---
 
@@ -138,40 +126,47 @@ Interface for fetc
 ##### Endpoints
 
 **GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
+- **Description:** Name of the city to fetch weather
+- **Parameters:**city
+  - 
 - **Response:**
-```json
 {
   "status": "success",
-  "data": {}
+  "data": {
+    "temperature": 28.5,
+    "humidity": 65,
+    "wind_speed": 5.4,
+    "city": "Mumbai"
+  }
 }
-```
-
+{
+  "status": "error",
+  "message": "City not found"
+}
 **POST /api/endpoint**
-- **Description:** [What it does]
+- **Description:** Predict fireworks risk based on weather data and manual inputs (crowd size, storage duration, fireworks quantity
 - **Request Body:**
-```json
 {
-  "field1": "value1",
-  "field2": "value2"
+  "temperature": 28.5,
+  "humidity": 65,
+  "wind_speed": 5.4,
+  "crowd_size": 200,
+  "storage_days": 5,
+  "quantity": 100
 }
-```
 - **Response:**
-```json
+
+
 {
   "status": "success",
-  "message": "Operation completed"
+  "prediction": "Safe",
+  "confidence": 92.5
 }
-```
 
-[Add more endpoints as needed...]
-
----
-
-
+{
+  "status": "error",
+  "message": "Missing required input(s)"
+}
 
 
 
@@ -181,7 +176,7 @@ If you used AI tools during development, document them here for transparency:
 
 **Tool Used:** [ChatGPT, Claude]
 
-**Purpose:** [What you used it for]
+**Purpose:** 
 -  "Generated code"
 -  "Debugging functions"
 -  "Code review and optimization suggestions"
@@ -198,9 +193,6 @@ If you used AI tools during development, document them here for transparency:
 - Architecture design and planning
 - UI/UX design decisions
 
-*Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
-
----
 
 ## Team Contributions
 
@@ -211,9 +203,6 @@ If you used AI tools during development, document them here for transparency:
 
 ## License
 
-This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
-
-**Common License Options:**
 - MIT License (Permissive, widely used)
 - Apache 2.0 (Permissive with patent grant)
 - GPL v3 (Copyleft, requires derivative works to be open source)
