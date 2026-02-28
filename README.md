@@ -88,15 +88,20 @@ streamlit run app.py]
 
 #### Screenshots (Add at least 3)
 
-![c:\Users\Administrator\Pictures\Screenshots\ss1.png](Add screenshot 1 here with proper name)
-Interface for fetc
+<img width="1806" height="811" alt="ss1" src="https://github.com/user-attachments/assets/ce72e5c3-df4f-4013-81f4-91fabef477a8" />
+Opening interface.The city name is fetched here
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1837" height="797" alt="ss2" src="https://github.com/user-attachments/assets/f0e3b26f-b729-4637-94e7-de492522b9ee" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+The real time temperature,humidity and wind speed of the selected city is displayed here 
 
+<img width="1731" height="866" alt="ss3" src="https://github.com/user-attachments/assets/09d3388a-9727-440f-a3a8-20f18be2fc8d" />
+
+manual inputs like crowd density,quantity of fireworks 
+
+<img width="1805" height="795" alt="ss4" src="https://github.com/user-attachments/assets/9b14d677-5312-46ea-bb48-5cc4e21f4a52" />
+
+Result is displayed here.we can find whether its safe,warning or high risk
 #### Diagrams
 
 **System Architecture:**
