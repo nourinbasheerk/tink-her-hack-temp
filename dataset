@@ -1,0 +1,47 @@
+import pandas as pd
+import numpy as np
+
+np.random.seed(42)
+
+rows = 500   # you can change to 300 if needed
+
+data = pd.DataFrame({
+    "temperature": np.random.randint(20, 50, rows),      # °C
+    "humidity": np.random.randint(20, 90, rows),         # %
+    "wind_speed": np.random.randint(0, 40, rows),        # km/h
+    "crowd_size": np.random.randint(0, 1000, rows),      # people
+    "storage_days": np.random.randint(1, 30, rows),      # days
+    "quantity": np.random.randint(10, 500, rows)         # kg
+})
+
+# -------- Risk Logic --------
+def calculate_risk(row):
+    risk_score = 0
+    
+    if row["temperature"] > 40:
+        risk_score += 1
+    if row["humidity"] < 30:
+        risk_score += 1
+    if row["wind_speed"] > 25:
+        risk_score += 1
+    if row["crowd_size"] > 400:
+        risk_score += 1
+    if row["quantity"] > 300:
+        risk_score += 1
+    if row["storage_days"] > 20:
+        risk_score += 1
+
+    if risk_score <= 1:
+        return "Safe"
+    elif risk_score <= 3:
+        return "Warning"
+    else:
+        return "High Risk"
+
+data["risk"] = data.apply(calculate_risk, axis=1)
+
+# Save dataset
+data.to_csv("fireworks_risk_dataset.csv", index=False)
+
+print("Dataset created successfully!")
+print(data.head())
