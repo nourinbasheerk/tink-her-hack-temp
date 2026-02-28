@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [AI BASED FIREWORKS RISK PREDICTION] 🎯
+#AI BASED FIREWORKS RISK PREDICTION 🎯
 
 ## Basic Details
 
-### Team Name: [Letz Code]
+### Team Name:Letz Code
 
 ### Team Members
-- Member 1: [Nourin Basheer K] - [TKM College of Engineering]
-- Member 2: [Thapasya E K] - [TKM College of Engineering]
+- Member 1: Nourin Basheer K -TKM College of Engineering
+- Member 2: Thapasya E K- TKM College of Engineering
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[This project is a Streamlit-based web app that predicts the risk level of fireworks events using a combination of real-time weather data and manual inputs such as crowd size, storage duration, and fireworks quantity.The app helps event organizers make safer decisions by classifying events as Safe, Warning, or High Risk with a confidence score.]
+This project is a Streamlit-based web app that predicts the risk level of fireworks events using a combination of real-time weather data and manual inputs such as crowd size, storage duration, and fireworks quantity.The app helps event organizers make safer decisions by classifying events as Safe, Warning, or High Risk with a confidence score.
 
 ### The Problem statement
-[Fireworks events can be dangerous due to factors like weather conditions, crowd size, improper storage, and the amount of fireworks used. Event organizers often rely on manual judgment, which can lead to accidents or unsafe situations.]
+Fireworks events can be dangerous due to factors like weather conditions, crowd size, improper storage, and the amount of fireworks used. Event organizers often rely on manual judgment, which can lead to accidents or unsafe situations.
 
 ### The Solution
-[The website collects real-time weather data from OpenWeather API (temperature, humidity, wind speed) and combines it with manual inputs such as crowd size, storage duration, and fireworks quantity. The model then classifies the event as Safe, Warning, or High Risk and provides a confidence score, helping organizers make informed and safer decisions.]
+The website collects real-time weather data from OpenWeather API (temperature, humidity, wind speed) and combines it with manual inputs such as crowd size, storage duration, and fireworks quantity. The model then classifies the event as Safe, Warning, or High Risk and provides a confidence score, helping organizers make informed and safer decisions.
 
 ---
 
@@ -31,10 +31,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [Python ] 
-- Frameworks used: [Streamlit ]
-- Libraries used: [numpy, joblib, requests, python-dotenv]
-- Tools used: [VS Code, Git, Github]
+- Languages used:Python 
+- Frameworks used:Streamlit 
+- Libraries used:numpy, joblib, requests, python-dotenv
+- Tools used:VS Code, Git, Github
 
 
 ---
@@ -56,7 +56,7 @@
 
 #### Installation
 ```bash
-[Installation commands -# Install Streamlit for building the web app
+Installation commands -# Install Streamlit for building the web app
 pip install streamlit
 
 # Install NumPy for array handling
@@ -69,16 +69,16 @@ pip install joblib
 pip install requests
 
 # Install python-dotenv to load environment variables (like API keys)
-pip install python-dotenv]
+pip install python-dotenv
 ```
 
 #### Run
 ```bash
-[Run commands - # Navigate to your project folder first
+Run commands - # Navigate to your project folder first
 cd path/to/your/project
 
 # Run the Streamlit app
-streamlit run app.py]
+streamlit run app.py
 ```
 ---
 
