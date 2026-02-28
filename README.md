@@ -14,6 +14,9 @@
 
 ### Hosted Project Link
 [mention your project hosted link here]
+YOUTUBE LINK
+
+https://youtu.be/OIODUu5If5c?si=vHlKN9cUytHP88BE
 
 ### Project Description
 This project is a Streamlit-based web app that predicts the risk level of fireworks events using a combination of real-time weather data and manual inputs such as crowd size, storage duration, and fireworks quantity.The app helps event organizers make safer decisions by classifying events as Safe, Warning, or High Risk with a confidence score.
